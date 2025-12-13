@@ -93,9 +93,7 @@ def total_fresh_ids(ranges):
 
 def main(filepath):
     fresh_ranges, ingredient_ids = read_file(filepath)
-    #collapsed_ranges = collapse_ranges(fresh_ranges) #this is helpful for part a
     collapsed_ranges = collapse_ranges_v2(fresh_ranges)
-    #print(len(collapsed_ranges))
     sort_produce(collapsed_ranges, ingredient_ids) #part a
     total_fresh_ids(collapsed_ranges) #part b
 
